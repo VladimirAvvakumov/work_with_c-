@@ -8,12 +8,18 @@
 
 Console.WriteLine("Введите целое положительное число");
 int num = Convert.ToInt32(Console.ReadLine());
-
 int count = -num; //num * -1
 
-while (count <= num)
-{
-    Console.Write(count + " ");
-    count++;
-}
 
+if (num > 0)
+{
+    while (count <= num)
+    {
+        Console.Write(count + " ");
+        count++;
+    }
+}
+else
+{
+    Console.Write("число не являеться положительным");
+}
