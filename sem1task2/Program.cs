@@ -13,7 +13,7 @@ int count = -num; //num * -1
 
 while (count <= num)
 {
-    Console.Write(count + " ");  
+    Console.Write(count + " ");
     count++;
 }
 
