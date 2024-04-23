@@ -12,5 +12,5 @@
 Console.WriteLine("Введите трехзначное число");
 int num = Convert.ToInt32(Console.ReadLine());
 int secondDigit = num / 10 % 10;
-int last Digit = num % 10;
+int lastDigit = num % 10;
 int count =
