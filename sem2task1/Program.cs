@@ -10,7 +10,7 @@ int num = Convert.ToInt32(Console.ReadLine());
 if (num >= 100 && num <= 999)
 {
     int FirstDigit = num / 100; // 256 / 100 = 2.56 = 2
-    int thirdDigit = num % 10; //  256
+    int thirdDigit = num % 10; //  256 % 10 = 250 + 6 = 6
 
     int result = FirstDigit * 10 + thirdDigit;
 
