@@ -27,9 +27,10 @@ if (num >= 100 && num <= 999)
         result = result * secondDigit; // 8 * 8
         count++;
     }
+
+Console.WriteLine(result); 
 }
 else
 {
     System.Console.WriteLine("ошибка ввода");
 }
-Console.WriteLine(result);
