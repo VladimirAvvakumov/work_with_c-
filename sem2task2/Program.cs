@@ -13,11 +13,13 @@ Console.WriteLine("Введите трехзначное число"); // 487
 
 int num = Convert.ToInt32(Console.ReadLine());
 
+
+if (num >= 100 && num <= 999)
+
 int secondDigit = num / 10 % 10; // 487 / 10 = 48 % 10 = 8
 int lastDigit = num % 10;  // 487 % 10 = 7
-int result = secondDigit; //
+int result = secondDigit; 
 int count = 1;
-if (num >= 100 && num <= 999)
 {
 
     while (count < lastDigit)
