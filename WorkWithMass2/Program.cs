@@ -5,3 +5,14 @@
 
 // int[] array = {2, 5, 2, 3, 6, 3, 7, 8, 2, 4}; // Создание массива
 // Выводится: 6
+int[] array = {2, 5, 2, 3, 6, 3, 7, 8, 2, 4} ;
+int count = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = array[i] % 2;
+    if (array[i]==0)
+    {
+        count++;
+    }
+}
+Console.WriteLine(count);

@@ -7,3 +7,24 @@
 // Выводится: 5
 
 
+
+using System.ComponentModel.DataAnnotations;
+
+int[] numbers = { 1, 5, 10, 20, 30, 40, 99, 4, 90, 3, 87, 65 };
+int count = 0;
+int minRange = 10;
+int maxRange = 90;
+for (int i = 0; i < numbers.Length; i++)
+{
+    if (numbers[i] >= minRange && numbers[i] <= maxRange)
+    {
+        count = count + 1;
+
+    }
+
+}
+return (count);
+
+
+
+
