@@ -105,3 +105,16 @@ int[] result = ArifmeticMeanRows(array2d);
 PrintArray(result);
 int Findmin = FindminDigit(result);
 Console.WriteLine(Findmin);
+
+
+
+
+    //Напишите свое решение здесь
+    //   int lastRowIndex = array.GetLength(0)-1;
+    //     for(int col = 0;col < array.GetLength(1);col++)
+    //     {
+    //       int temp = array[0,col];
+    //       array[0,col] = array[lastRowIndex,col];
+    //       array[lastRowIndex,col]=temp;
+    //     }
+    //   return array;
