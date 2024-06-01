@@ -28,9 +28,9 @@ foreach (int e in numbers)
         Console.WriteLine($"{e} ");
     }
 }
-bool IsInteresting(int value)
+bool IsInteresting(bool value)
 {
-    int sumOfDigits = GetSumOfDigits(value);
+    bool sumOfDigits = GetSumOfDigits(value);
     if(sumOfDigits % 2 == 0)
     {
         return true;
