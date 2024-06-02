@@ -8,10 +8,10 @@
 // “World” => W r l d
 // “Hello world!” => H l l w r l d
 
-static void CheckPrintConsonats(string txt, int index)
+void CheckPrintConsonats(string txt, int index)
 {
 string vowels = "aeiouy";
-if (!vowels.Contains(txt[index])) //char.IsAsciiLetter(txt[index]) проверка на буквы ли это у меня не работает.
+if (char.IsLetter(txt[index]) && !vowels.Contains(txt[index])) //char.IsAsciiLetter(txt[index]) проверка на буквы ли это у меня не работает.
 {
 Console.Write($"{txt[index]}");
 }

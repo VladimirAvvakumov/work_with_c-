@@ -1,22 +1,23 @@
 ﻿// Напишите программу вычисления функции Аккермана с помощью рекурсии.
 //  Даны два неотрицательных числа m и n.
 
-
-using System.Reflection;
-
-int Ack(int n, int m)
+int AckF(int m, int n)// Создаем рекурсивную функцию
 {
-    if (n = 0)
+    if (m == 0)// Если переменная m равнна 0
     {
-        return m + 1;
+        return n + 1;// возврат n + 1
     }
-    else
-    if (m = 0)
+    else if (n == 0)  //Ещё если n равна 0
     {
-        return Ack(n - 1, 1);
-        // return Ack(n - 1,Ack(n,m - 1));
+        return AckF(m - 1, 1);//возврат и запуск рекурсии с переменными m-1,1
     }
-    return Ack(n - 1, Ack(n, m - 1));
+    else //ещё
+    {
+        return AckF(m - 1, AckF(m, n - 1));// возврат и запуск рекурсии
+    }
 }
-int result = Ack(2, 3);
-Console.WriteLine(result);
+int m = 3;
+int n = 4;
+
+int result = AckF(m, n);
+Console.WriteLine($"({m}, {n}) = {result}");
