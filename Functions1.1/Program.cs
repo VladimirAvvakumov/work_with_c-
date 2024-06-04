@@ -41,7 +41,7 @@ int CountPrimeNumbers(int[] array)
     int count = 0; // создали переменную счетчика
     for (int i = 0; i < array.Length; i++)
     {
-        if (IsPrime(array[i]))
+        if (IsPrime(array[i]))// Проверка на число ли это IsPrime/
         {
             count++;
         }

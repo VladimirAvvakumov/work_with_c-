@@ -2,7 +2,7 @@
 // (первый элемент станет последним, второй – предпоследним и т.д.)
 
 
-using System.Net.NetworkInformation;
+
 
 int[] array = { 1, 5, 3, 67, 9 };
 Console.WriteLine(array);

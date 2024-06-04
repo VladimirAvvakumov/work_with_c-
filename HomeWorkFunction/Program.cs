@@ -11,10 +11,10 @@ while (true)// Бесконечный цикл
 
     if (input == "q") // Проверка на ввод 'q' для выхода
     {
-        break;
+        break;// команда для выключения программы.
     }
     int number;
-    if (int.TryParse(input, out number)) // Проверка, является ли ввод числом
+    if (int.TryParse(input, out number)) // Проверка, является ли ввод числом tryParse.
     {
         int sum = 0;
         while (number > 0) // Вычисление суммы цифр числа

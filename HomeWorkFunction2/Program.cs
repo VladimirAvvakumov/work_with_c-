@@ -17,7 +17,7 @@ void PrintArray(int[] array) // метод
     Console.Write("["); //Пишем в начале для того чтоб выводимые на монитор перед цифрами выводилась скобка
     for (int i = 0; i < array.Length; i++) // просто цикл фор 
     {
-        if (i < array.Length - 1) // если ай меньше длинны массива - 1
+        if (i < array.Length - 1) // если ай меньше индекса последнего элемента массива
         {
             Console.Write($"{array[i]}, "); // интерпаляция выводим элементы через запятую
         }
@@ -29,7 +29,7 @@ void PrintArray(int[] array) // метод
     }
     Console.Write("]");//закрывающая скобка 
 }
-int CountEvenNum(int[] array)
+int CountEvenNum(int[] array)// Метод для нахождения четных чисел в массиве.
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)

@@ -36,7 +36,7 @@ void PrintArray(int[] array) // метод
     }
     Console.Write("]");//закрывающая скобка 
 }
-int ArrayToNumber(int[] array)
+int ArrayToNumber(int[] array)// Метод создающий единое число из элементов массива.
 {
     int res = 0;
     for (int i = 0; i < array.Length; i++)

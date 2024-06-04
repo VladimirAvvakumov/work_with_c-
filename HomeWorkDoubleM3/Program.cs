@@ -15,7 +15,7 @@
 
 
 
-using System.Drawing;
+
 
 int[,] CreatenumbersRndInt(int rows, int columns, int min, int max)
 {
@@ -64,7 +64,7 @@ void PrintArray(int[] array) // метод
     }
     Console.Write("]");//закрывающая скобка 
 }
-int[] ArifmeticMeanRows(int[,] numbers)
+int[] ArifmeticMeanRows(int[,] numbers)// Метод для нахождения сумм элементов внутри строк .
 {
     int[] array = new int[numbers.GetLength(0)];
     for (int i = 0; i < numbers.GetLength(0); i++)
@@ -78,7 +78,7 @@ int[] ArifmeticMeanRows(int[,] numbers)
     }
     return array;
 }
-int FindminDigit(int[] array)
+int FindminDigit(int[] array)// метод для нахождения минимального элемениа массива.
 {
     
     int min = array[0];

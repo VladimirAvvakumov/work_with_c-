@@ -17,21 +17,7 @@
 // 1   2   3   4
 
 
-// int[,] CreatenumbersRndInt(int rows, int columns, int min, int max)
-// {
-//     int[,] array = new int[rows, columns];// создаем массив внутри функции rows-строки,columns-столбцы
-//     Random rnd = new Random();
 
-//     for (int i = 0; i < array.GetLength(0); i++) //используем цикл для прохождения по строкам
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)// используем цикл фор для столбцов используем J так принято Начинаеться с 1,не с 0
-//         {
-//             array[i, j] = rnd.Next(min, max);//метод некст генерирует случайное число, заполняем массив случайными числами
-//         }                                    // далее будем использовать matrix.GetLength(0) Вместо rows и columns
-
-//     }
-//     return array; // так как метод(функция) int значит есть возвращаемое значение
-// }
 
 int[,] array = new int[,] {
      {1, 2, 3, 4},

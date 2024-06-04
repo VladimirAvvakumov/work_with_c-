@@ -11,7 +11,7 @@
 void CheckPrintConsonats(string txt, int index)
 {
 string vowels = "aeiouy";
-if (char.IsLetter(txt[index]) && !vowels.Contains(txt[index])) //char.IsAsciiLetter(txt[index]) проверка на буквы ли это у меня не работает.
+if (char.IsLetter(txt[index]) && !vowels.Contains(txt[index])) //Проверяем массив на буква ли это isLetter
 {
 Console.Write($"{txt[index]}");
 }

@@ -3,27 +3,27 @@
 // Пример
 // 456 => [6 5 4]
 // 781 => [1 8 7]
-int num;
+
 Console.Write("Введите трехзначное число: ");
-num = Convert.ToInt32(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());//456
 
 int numCopy = num;
 int count = 0;
 
 // счетает количество цифр в числе
-while (numCopy != 0)
+while (numCopy != 0)// пока numCopy не равно нулю
 {
-    numCopy /= 10;
-    count++;
+    numCopy /= 10;//  456 / 10 = 45 , 45/ 10 = 4, 
+    count++;//счетчик плюс один 1+1+1
 }
 
 
 int[] arr = new int[count]; // создаем массив на количество цифр
 int index = 0; // индекс последнего элемента
-while (num != 0)
+while (num != 0)//пока переменная не равна нулю
 {
-    arr[index] = num % 10;
-    num /= 10; // num = num / 10;
+    arr[index] = num % 10; // 456 % = 6, 
+    num /= 10; // num = num / 10; 436 / 10 = 43, 43 / 10 = 4
     index++;
 }
 Console.Write(" ");
